@@ -1,0 +1,1 @@
+- On `Netlify`, Next.js `Route Handlers` are automatically deployed as `Serverless Functions`.

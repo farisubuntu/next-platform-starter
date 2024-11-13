@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Alert } from '@/../components/alert';
+import { Alert } from '@/components/blog/alert';
 import { Markdown } from '@/components/blog/markdown';
 
 export const metadata = {
