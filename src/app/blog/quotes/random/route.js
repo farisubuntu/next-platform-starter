@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import data from '@/lib/data/quotes.json';
+import data from '@/lib/blog/data/quotes.json';
 
 export const dynamic = 'force-dynamic'; // Otherwise, Next.js will cache this handler's output
 

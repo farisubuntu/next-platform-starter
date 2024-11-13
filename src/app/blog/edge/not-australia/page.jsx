@@ -1,4 +1,4 @@
-import EdgeFunctionExplainer from '@/explainer';
+import EdgeFunctionExplainer from '@/app/blog/edge/explainer';
 
 export const metadata = {
     title: 'Not Australia'
