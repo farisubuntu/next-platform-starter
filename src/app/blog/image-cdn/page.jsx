@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Markdown } from '@/components/blog/markdown';
-import { getNetlifyContext } from 'utils';
+import { getNetlifyContext } from '@/lib/blog/utils';
 import { ImageWithSizeOverlay } from './image-with-size-overlay';
 import { ContextAlert } from '@/components/blog/context-alert';
 

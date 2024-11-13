@@ -3,7 +3,7 @@ import { Card } from '@/components/blog/card';
 import { RandomQuote } from '@/components/blog/random-quote';
 import { Markdown } from '@/components/blog/markdown';
 import { ContextAlert } from '@/components/blog/context-alert';
-import { getNetlifyContext } from 'utils';
+import { getNetlifyContext } from '@/lib/blog/utils';
 
 const cards = [
     //{ text: 'Hello', linkText: 'someLink', href: '/' }
