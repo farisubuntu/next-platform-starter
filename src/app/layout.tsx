@@ -1,15 +1,29 @@
-import {Suspense} from "react";
-import { Metadata } from "next";
-import Loading from "@/components/Loading";
+import '@/styles/globals.css';
+import { Footer } from '@/components/blog/footer';
+import { Header } from '@/components/blog/header';
 
-export const metadata: Metadata = {
-  title: "Dashboard",
-  description: "Dashboard",
-}
-export default function Rootlayout({ children }: { children: React.ReactNode }) {
-  return (
-    <Suspense fallback={<Loading />}>
-      <DashboardSidebar>{children}</DashboardSidebar>
-    </Suspense>
-  );
+export const metadata = {
+    title: {
+        template: '%s | Netlify',
+        default: 'Netlify Starter'
+    }
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+    return (
+        <html lang="en" data-theme="lofi">
+            <head>
+                <link rel="icon" href="/favicon.svg" sizes="any" />
+            </head>
+            <body className="antialiased text-white bg-blue-900">
+                <div className="flex flex-col min-h-screen px-6 bg-grid-pattern sm:px-12">
+                    <div className="flex flex-col w-full max-w-5xl mx-auto grow">
+                        <Header />
+                        <div className="grow">{children}</div>
+                        <Footer />
+                    </div>
+                </div>
+            </body>
+        </html>
+    );
 }
